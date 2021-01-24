@@ -18,4 +18,19 @@
 		}
 	}
 
+	if(!win.document.getElementsByClassName){
+		win.document.getElementsByClassName = function(className){
+			var elements = [],
+				regexp = new RegExp('(\\s|^)(?:'+className.trim()+')(?=\\s|$)');
+
+			Array.prototype.forEach.call(win.document.getElementsByTagName('*'), function(element){
+				if(regexp.test(element.className)){
+					elements.push(element)
+				}
+			});
+
+			return elements;
+		}
+	}
+
 })(window);
