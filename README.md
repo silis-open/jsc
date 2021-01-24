@@ -35,3 +35,6 @@ clone在日常编码中比较常用到，用于浅复制数据
 
 #### document.addEventListener(""DOMContentLoaded"", function(){})
 使低版本浏览器支持document.addEventListener(""DOMContentLoaded"", function(){})
+
+#### document.getElementsByClassName
+兼容低版本浏览器的document.getElementsByClassName
