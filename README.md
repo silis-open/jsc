@@ -30,3 +30,8 @@ clone在日常编码中比较常用到，用于浅复制数据
 
 #### Object.assign
 浅复制对象所有成员到第一个参数的对象中
+
+## HTMLDocument
+
+#### document.addEventListener(""DOMContentLoaded"", function(){})
+使低版本浏览器支持document.addEventListener(""DOMContentLoaded"", function(){})
