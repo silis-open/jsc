@@ -44,7 +44,7 @@
 	}
 
 	//查找指定元素所在位置，如果没有找到则返回-1
-	win.Array.prototype.indexOf = function(item){
+	win.Array.prototype.indexOf = win.HTMLCollection.indexOf = function(item){
 		for(var i = 0; i < this.length; i++){
 			if(this[i] === item) return i;
 		}
