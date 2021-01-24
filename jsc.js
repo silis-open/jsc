@@ -1,7 +1,7 @@
 (function(win){
 
 	//循环数组内元素
-	win.Array.prototype.forEach = win.HTMLCollection.prototype.forEach = function(body, ctx){
+	win.Array.prototype.forEach = function(body, ctx){
 		if(this == null) return;
 		for(var i = 0; i < this.length; i++){
 			body.call(ctx || win, this[i], i);
@@ -9,7 +9,7 @@
 	}
 
 	//将数组内元素，搬到新的数组中，并返回新的数组。
-	win.Array.prototype.clone = win.HTMLCollection.clone = function(){
+	win.Array.prototype.clone = function(){
 		var arr = [];
 		for(var i = 0; i < this.length; i++) arr.push(this[i]);
 		return arr;
@@ -21,7 +21,7 @@
 	}
 
 	//将数组内元素去重复
-	win.Array.prototype.distinct = win.HTMLCollection.distinct = function(){
+	win.Array.prototype.distinct = function(){
 		var that = this, arr = that.clone();
 		that.clear();
 		if(win.Set){ //es6以上
@@ -44,7 +44,7 @@
 	}
 
 	//查找指定元素所在位置，如果没有找到则返回-1
-	win.Array.prototype.indexOf = win.HTMLCollection.indexOf = function(item){
+	win.Array.prototype.indexOf = function(item){
 		for(var i = 0; i < this.length; i++){
 			if(this[i] === item) return i;
 		}
