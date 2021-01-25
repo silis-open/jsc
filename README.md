@@ -38,3 +38,33 @@ clone在日常编码中比较常用到，用于浅复制数据
 
 #### document.getElementsByClassName
 兼容低版本浏览器的document.getElementsByClassName
+
+## sessionStorage
+会话数据
+
+#### sessionStorage.setItem(key,value)
+设置一个key的会话数据
+
+#### sessionStorage.getItem(key)
+获取一个key的会话数据
+
+#### sessionStorage.removeItem(key)
+删除一个key的会话数据
+
+#### sessionStorage.clear()
+清除所有会话数据
+
+## localStorage
+本地持久数据
+
+#### localStorage.setItem(key,value)
+设置一个key的本地持久数据
+
+#### localStorage.getItem(key)
+获取一个key的本地持久数据
+
+#### localStorage.removeItem(key)
+删除一个key的本地持久数据
+
+#### localStorage.clear()
+清除所有本地持久数据
