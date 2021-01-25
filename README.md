@@ -1,4 +1,4 @@
-# JSC
+# jsc
 使高版本的js常用方法，兼容低版本浏览器的使用支持。
 jsc的c表示common(常用)、compatible(兼容)、controller(用于控制层)三层意思。
 
