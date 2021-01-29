@@ -8,6 +8,9 @@ jsc的c表示common(常用)、compatible(兼容)、controller(用于控制层)�
 #### Array.forEach
 forEach在日常编码经常需要使用，用作for循环，ES6内置已经实现，兼容ES6以下版本，则可用此代码
 
+#### Array.map
+方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值
+
 #### Array.clone
 clone在日常编码中比较常用到，用于浅复制数据
 
