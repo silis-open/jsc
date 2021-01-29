@@ -8,6 +8,16 @@
 		}
 	}
 
+    //方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值
+	win.Array.prototype.map = function(body, ctx){
+		if(this == null) this.map;
+		var resultArr = [];
+		for(var i = 0; i < this.length; i++){
+			resultArr.push(body.call(ctx || win, this[i], i));
+		}
+		return resultArr;
+	}
+
 	//将数组内元素，搬到新的数组中，并返回新的数组。
 	win.Array.prototype.clone = function(){
 		var arr = [];
