@@ -35,6 +35,9 @@ clone在日常编码中比较常用到，用于浅复制数据
 #### Object.assign
 浅复制对象所有成员到第一个参数的对象中
 
+#### Object.defineProperty
+定义一个对象的属性，低版本浏览器只支持使置属性的value
+
 ## HTMLDocument
 
 #### document.addEventListener(""DOMContentLoaded"", function(){})
