@@ -11,17 +11,11 @@ forEach在日常编码经常需要使用，用作for循环，ES6内置已经实�
 #### Array.map
 方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值
 
-#### Array.clone
-clone在日常编码中比较常用到，用于浅复制数据
-
-#### Array.clear
-清空数组内所有元素
+#### Array.indexOf
+查找指定元素所在位置，如果没有找到则返回-1
 
 #### Array.distinct
 将数组内元素去重复
-
-#### Array.indexOf
-查找指定元素所在位置，如果没有找到则返回-1
 
 ## String
 字符串常用方法
