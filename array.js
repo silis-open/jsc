@@ -28,22 +28,10 @@
 		}
 	}
 
-	//将数组内元素，搬到新的数组中，并返回新的数组。
-	Object.defineProperty(win.Array.prototype, "clone", { value : function(){
-		var arr = [];
-		for(var i = 0; i < this.length; i++) arr.push(this[i]);
-		return arr;
-	}, enumerable:false });
-
-	//清空数组内所有元素
-	Object.defineProperty(win.Array.prototype, "clear", { value : function(){
-		this.splice(0,this.length);
-	}, enumerable:false });
-
 	//将数组内元素去重复
 	Object.defineProperty(win.Array.prototype, "distinct", { value : function(){
-		var that = this, arr = that.clone();
-		that.clear();
+		var that = this, arr = that.slice();
+		that.splice(0);
 		if(win.Set){ //es6以上
 			var map = new win.Set();
 			for(var i = 0; i < arr.length; i++){
