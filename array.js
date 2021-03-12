@@ -4,8 +4,9 @@
 		//循环数组内元素
 		win.Array.prototype.forEach = function(body, ctx){
 			if(this == null) this.forEach;
-			for(var i = 0; i < this.length; i++){
-				body.call(ctx || win, this[i], i);
+			var arr = this.slice(); //复制数组，避免循环中添加，造成无限循环
+			for(var i = 0; i < arr.length; i++){
+				body.call(ctx || win, arr[i], i);
 			}
 		}
 
