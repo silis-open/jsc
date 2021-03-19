@@ -1,36 +1,71 @@
-# array
+# jsc
+Make the common methods of high version js compatible with the use support of low version browsers.
+The c of jsc represents the three layers of common (commonly used), compatible (compatible), and controller (used for the control layer).
 
-#### Description
-{**When you're done, you can delete the content in this README and update the file with details for others getting started with your repository**}
+## Array
+Common methods of arrays
 
-#### Software Architecture
-Software architecture description
+#### Array.forEach
+forEach is often used in daily coding. It is used as a for loop. The built-in ES6 has been implemented, and it is compatible with versions below ES6. This code can be used
 
-#### Installation
+#### Array.map
+The method returns a new array, the elements in the array are the values ​​processed by the original array elements after calling the function
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### Array.indexOf
+Find the location of the specified element, if not found, return -1
 
-#### Instructions
+#### Array.distinct
+De-duplicate the elements in the array
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## String
+String common methods
 
-#### Contribution
+#### String.trim
+Remove the spaces, carriage returns and tabs at the beginning and end of the string
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+## Object
+Object common methods
 
+#### Object.assign
+Shallow copy all members of the object to the object of the first parameter
 
-#### Gitee Feature
+#### Object.defineProperty
+Define the attribute of an object, lower version browsers only support the value of the attribute
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## HTMLDocument
+
+#### document.addEventListener(""DOMContentLoaded"", function(){})
+Enable lower version browsers to support document.addEventListener(""DOMContentLoaded"", function(){})
+
+#### document.getElementsByClassName
+Document.getElementsByClassName compatible with lower version browsers
+
+## sessionStorage
+Session data
+
+#### sessionStorage.setItem(key,value)
+Set the session data of a key
+
+#### sessionStorage.getItem(key)
+Get session data of a key
+
+#### sessionStorage.removeItem(key)
+Delete session data of a key
+
+#### sessionStorage.clear()
+Clear all session data
+
+## localStorage
+Local persistent data
+
+#### localStorage.setItem(key,value)
+Set up a key's local persistent data
+
+#### localStorage.getItem(key)
+Get the local persistent data of a key
+
+#### localStorage.removeItem(key)
+Delete the local persistent data of a key
+
+#### localStorage.clear()
+Clear all local persistent data
